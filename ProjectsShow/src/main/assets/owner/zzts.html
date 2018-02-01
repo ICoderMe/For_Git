@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>货运宝--货主端</title>
+    <link href="jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"/>
+    <style>
+        *{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.title{text-align:center; font-size:22px; color:#ebebeb;height:45px; line-height:45px;}
+		.left{background:url(images/back.png) no-repeat; width: 29px;height: 30px;display: block;float: left;margin-top: 10px;  background-size: 80%;}
+		h2{color: #fda348;font-size: 13px;width: 155px;float: left; margin-left:20px; margin-top:14px;}
+		.top{height:280px;background:#ffffff; padding-top:25px; margin-top:5px;}
+		.tc_left{border-right: 1px solid #bbbbbb; height:85%;width: 70%; float:left;}
+		li{height:55px;}
+		.tc_left span{width:48px;height:54px;position:absolute;margin-left:10px;}
+		.address{background:url(images/ts_start.png) no-repeat; }
+		.last{background:url(images/ts_end.png) no-repeat;}
+		.host{background:url(images/ts_host.png) no-repeat;}
+		.time{background:url(images/ts_time.png) no-repeat;margin-left: 15px;}
+		.message{background:url(images/ts_message.png) no-repeat;}
+		p{margin-left: 65px;margin-top: 8spx;position: absolute;}
+		.end{background:url(images/ts_end.png) no-repeat; width:48px;height:54px;position:absolute;margin-top:14px;   
+		     margin-left:10px;}
+		.tc_right{ margin-top:20px; font-size:12px;height:300px; width:100px; float:left; margin-top:40px; color:#999999;}
+		.tc_right span{color:#fda348; font-size:20px;}
+    </style>
+</head> 
+<body> 
+	<div data-role="header">
+    	<a href="wddd.html" class="left"></a>
+    	<div class="title">正在推送司机</div>
+    </div> 
+    <div class="top">
+    	<div class="tc_left">
+        	<ul>
+            	<li><span class="address"></span><p>广东广州天河区XX路XX号</p></li>
+                <li><span class="last"></span><p>福建福州仓山区</p></li>
+                <li><span class="host"></span><p>钢材20吨</p></li>
+                <li><span class="time"></span><p>2016-09-09 10:00</p></li>
+                <li><span class="message"></span><p>13米板车，不压车</p></li>
+            </ul>
+        </div>
+        <div class="tc_right">
+        	<td>单号：<br>201505080266</td><br><br><br><br>
+            <td>估价：<br><span>￥5800</span></td>
+        </div>
+    </div>
+</body>
+</html>

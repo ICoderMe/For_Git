@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>货运宝--货主端</title>
+    <link href="jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"/>
+  
+    <script type="text/javascript" src="images/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.bg').fadeIn(100);
+                $('.tc').slideDown(100);
+            })
+            $('.tc_top .close').click(function(){
+                $('.bg').fadeOut(100);
+                $('.tc').slideUp(100);
+            })
+        })
+    </script>
+    <style>
+        *{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.title{text-align:center; font-size:22px; color:#ebebeb;height:45px;line-height:45px;}
+		.left{background:url(images/back.png) no-repeat; width: 29px;height: 37px;display: block;float: left;margin-top: 5px;}
+        .list_dd:nth-child(1){margin-top:5px;height:145px; background:#ffffff;}
+		.list_dd:nth-child(2){height:145px; background:#ffffff;margin-top: 10px;}
+		.top_line{background:url(images/line1.png) repeat-x; height:6px;}
+		 h2{color: #fda348;font-size: 24px;width: 80px;float: left; margin-left:20px;height: 22px;  line-height: 22px;  margin-top: 10px;}
+		.close{float: right;margin-right: 20px;font-size: 30px;color: #999999; text-decoration:none;}
+		.bottom_line{border:1px solid #cecece; margin-top:40px;margin-left:20px;margin-right: 20px;}
+		.left_content{color:#333333; font-size:14px; margin-left:20px; margin-top:10px; float:left; line-height:25px;                      position:absolute;}
+		.update{width: 76px; height: 31px;background: #fda348;margin-top: 31px;margin-left: 70%;position: absolute;                border-radius: 6px;text-decoration: none;text-align: center;line-height: 30px;color: #ffffff;}
+		.bottom{height:95px; background:#000; width:98%;margin-left:1%;margin-top:36px;opacity:0.8;bottom:0px;
+		         position: fixed;}
+		.goon{width: 97px;height: 45px;background: #dddddd;margin-top: 30px;margin-left: 30px;position: absolute; border-radius:8px;
+            text-decoration: none;text-align: center;line-height: 45px;color: #ffffff;font-size: 19px;}
+		.now{width: 97px;border-radius: 8px;height: 45px;background: #ffa633;margin-top: 30px;float: right;
+            margin-right: 30px;text-decoration: none;text-align: center;line-height: 45px;color: #ffffff;font-size: 19px;}
+		
+		.tc {z-index:9999; position:fixed; top:25%; margin-left: 2%; width:95%; height:30%; margin-top:-35px;
+             border-radius:5px;  background: #f3f3f3;  display:none;  }
+		.tc_line{background: url("images/line.png") repeat-x; width:100%; height:8px;}
+		.tc_top {background: #fda348; height:35px;}
+		h3{font-size: 22px; text-align: center;font-weight: unset;  letter-spacing: 1.2px; color: #ffffff; }
+		.tc_top .close {float:right; color:#ff9933; padding:5px; margin:10px 30px 0px 0px;  font:bold 30px/30px simsun; 	                        text-decoration: none;}
+		.tc_form {border-radius: 5px;padding-left:7%;}
+		.info {color:#333333; font-size:18px; letter-spacing:1.2px; line-height:24px; text-align:center; margin-top:20px;}
+
+		.quxiao{height:40px;width:90px; background:#dedede;border:none;font-size:14px;margin-top:15px;  border-radius:4px; cursor:pointer; }
+		.tijiao{height:40px; width:90px; background: #fda448; font-size: 14px; color:#333333; text-align: center; border:                none; border-radius: 4px; cursor: pointer; margin-top:15px; margin-right:5%;float:right;}
+		.bg{width:100%;height:100%;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5; background:            #000000; display:none;}
+		td{font-size:14px;}
+    </style>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+    
+	<div data-role="header">
+    	<a href="msxd.html" class="left"></a>
+		<div class="title">订单列表</div>
+    </div> 
+    <div class="content">
+    	<div class="list_dd">
+        	<div class="top_line"></div>
+        	<h2>$5502</h2><a class="close  baojia theme-login" href="javascript:;" >X</a>
+            <div class="bottom_line"></div>
+            <div class="left_content">
+            	起点：河北霸州上源金属集团<br>
+                终点：上海虹桥 <br>
+                货物：钢条20吨 <br>
+            </div>
+            <a href="update.html" class="update">修改</a>
+        </div>
+        <div class="list_dd">
+        	<div class="top_line"></div>
+        	<h2>$5502</h2><a class="close"href="javascript:;" >X</a>
+            <div 
+            class="bottom_line"></div>
+            <div class="left_content">
+            	起点：河北霸州上源金属集团<br>
+                终点：上海虹桥 <br>
+                货物：钢条20吨 <br>
+            </div>
+            <a href="update.html" class="update">修改</a>
+        </div>
+       
+        
+         <div class="tc" >
+               <div class="tc_top"><h3>提示</h3></div>
+               <div class="tc_line"></div>
+               <div class="tc_form">
+                   <form class="tc_theme" name="loginform" action="" method="post">
+                     <div class="info">是否删除？</div>
+                  	  <input class="quxiao" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+                      <input class="tijiao" type="button" value=" 确 定 " onclick="javaScript:window.location.href='';"/>
+                   </form>
+               </div>
+           </div>
+           <div class="bg"></div>
+       </div>  
+    </div>
+    <div class="bottom">
+        	<a class="goon" href="msxd.html">继续添加</a>
+            <a class="now" href="">立即发货</a>
+    </div>
+</div>
+</body>
+</html>

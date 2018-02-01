@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>损管详情-物业端-智部落</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header header-pink">
+    <a href="javascript:history.go(-1);"><i class="go_back  icon-angle-left"></i></a>
+    <h1 class="title">ZDCLAN</h1>
+</header>
+<h1 class="sub-menu sub-menu-txt">报修/损管</h1>
+<ul class="list top-margin-gap">
+    <li>
+        <label>报修事项</label>
+        <input type="text" class="info-txt" value="C1-8-801卧墙面渗水，申请维护处理！" readonly>
+    </li>
+    <li>
+        <label>具体内容</label>
+        <textarea class="list-textarea" readonly style="height: 6rem;">阳光佳和小区C1-8-801卧墙面渗水，申请维护处理，麻烦请尽快为我们解决一下哦~</textarea>
+    </li>
+    <li class="li-top clear">
+        <img src="images/zj0.jpg" alt="说明图片" class="list-img">
+        <img src="images/zj1.jpg" alt="说明图片" class="list-img">
+        <img src="images/zj2.jpg" alt="说明图片" class="list-img">
+        <img src="images/zj1.jpg" alt="说明图片" class="list-img">
+        <img src="images/zj0.jpg" alt="说明图片" class="list-img">
+    </li>
+</ul>
+<div class="operation">
+    <input type="button" class="ope-btn" value="确认受理" onclick="confirmBtn(this);">
+</div>
+<script type="text/javascript">
+    //确认受理
+    function confirmBtn(btn){
+        if(btn){
+            if(!confirm("确认受理吗？")){
+                return false;
+            }
+            window.open("serviceman-add.html",'_self');
+        }
+    }
+</script>
+
+</body>
+</html>

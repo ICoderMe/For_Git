@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    signingConfigs {
+
+        config {
+            keyAlias '18201315201'
+            keyPassword '123456'
+            storeFile file('C:/Users/LC/Desktop/chao/jks/projectsshow.jks')
+            storePassword '123456'
+            v2SigningEnabled false
+        }
+    }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    defaultConfig {
+        applicationId "com.myapplication"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.zhy:percent-support-extends:1.0.1'
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    compile('com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE')
+}
+
+
+

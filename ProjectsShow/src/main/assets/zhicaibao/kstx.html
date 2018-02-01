@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>智财宝-提现</title>
+	<meta name="viewport" content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.theme-login').click(function(){
+				$('.bg').fadeIn(100);
+				$('.tc').slideDown(100);
+			})
+			$('.tc_top').click(function(){
+				$('.bg').fadeOut(100);
+				$('.tc').slideUp(100);
+			})
+		})
+		function pupopen(){
+			document.getElementById("bg").style.display="block";
+			document.getElementById("popbox").style.display="block" ;
+		}
+		function pupclose(){
+			document.getElementById("bg").style.display="none";
+			document.getElementById("tc").style.display="none" ;
+		}
+	</script>
+</head>
+<body>
+<div class="top">
+	<a class="back" href="index.html"><img src="images/back.png"></a>
+	<p>提现</p>
+</div>
+<div class="kstx">
+	<ul>
+		<li><img src="images/yhk.png" class="tb"><p>中国建设银行</p><span>尾号2222</span><img src="images/go.png" class="go"></li>
+		<li><p class="je">金额</p><span >|输入金额</span><img src="images/go.png" class="go"></li>
+	</ul>
+</div>
+<div class="con-kstx">
+	<p>支持10万额度，最快2小时到账</p><a class="wj" href="wjmm.html">忘记支付密码</a>
+</div>
+<div class="next two"><a class="sc theme-login aa">确认提现</a></div>
+
+<!--弹窗支付-->
+<div class="tc" id="tc">
+
+		<div class="tc_form">
+			<form class="tc_theme" name="loginform" action="" method="post" >
+				<div class="tc-top"><a onclick="pupclose()" class="close">×</a>输入密码</div>
+				<a href="txjg.html"><div class="tc-content" >
+					<li></li><li></li><li></li><li></li><li></li><li></li>
+				</div></a>
+			</form>
+		</div>
+</div>
+<div class="bg" id="bg"></div>
+</body>
+</html>

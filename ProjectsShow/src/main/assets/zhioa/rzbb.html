@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>智OA-所有日志</title>
+	<meta name="viewport" content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<style>
+		*{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.top{background: #f3f3f3;height:40px;}
+		.one{width: 8%;  float: left;  height: 40px;}
+		.top .back{width:10px; margin-left:7px;margin-top:11px;position: absolute;}
+		.top .gg{width: 120px;  padding-top: 7px;}
+		.top .hh{width: 80%; text-align: center;float:left;}
+		.add img{ margin-top:5px; margin-right:3%; color:#333333; text-decoration: none;width:35px;position: absolute;text-align: right;}
+		/*选项卡css */
+		.slideTxtBox{margin-top:1px;}
+		.slideTxtBox .hd{height:45px; line-height:45px; position:relative; }
+		.slideTxtBox .hd ul{color:#5a5a5a; height:45px; width:100%; background:#ffffff;}
+		.slideTxtBox .hd ul li{float:left; cursor:pointer; width:33.3%;height:45px; line-height:45px; text-align: center;}
+		.slideTxtBox .hd ul li.on{height:45px; line-height:45px; background:#f3f3f3; width:33.3%; float:left; text-align:center;}
+		.slideTxtBox .bd ul{margin-top:1px;}
+		.slideTxtBox .bd .list_dd img{width: 17%; margin: 10% 0 0 40%;}
+		.slideTxtBox .bd li{ height:24px; line-height:24px;   }
+		.slideTxtBox .bd .list_dl{width:100%; height:45px;background: #ffffff; line-height: 45px;}
+		.title{font-size: 13px; padding: 0 0 0 10px; float:left;width:30%;}
+		p{font-size: 12px;  padding: 0 20px 0 10px; float:right;width:37%;}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<a href="rz.html" class="one"><img class="back" src="images/back.png"></a>
+		<div class="hh"><img class="gg" src="images/all_log.png"></div>
+		<a href="add.html"class="add"><img src="images/add.png"></a>
+	</div>
+	<div class="slideTxtBox">
+		<div class="hd">
+			<ul><li>日报</li><li>周报</li><li>月报</li></ul>
+		</div>
+		<div class="bd">
+			<ul>
+				<div class="list_dd"><img src="images/ts.png"></div>
+			</ul>
+			<ul>
+				<div class="list_dl">
+					<div class="title">测试</div><p>2016-9-26 11:33:36</p>
+				</div>
+			</ul>
+			<ul>
+				<div class="list_dd"><img src="images/ts.png"></div>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+</body>
+</html>

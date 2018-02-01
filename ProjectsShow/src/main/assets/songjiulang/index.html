@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>送酒廊-首页</title>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <script>
+            jQuery(document).ready(function($) {
+                $('.theme-login').click(function(){
+                    $('.bg').fadeIn(100);
+                    $('.tc').slideDown(100);
+                })
+                $('.tc_top .close').click(function(){
+                    $('.bg').fadeOut(100);
+                    $('.tc').slideUp(100);
+                })
+            })
+        </script>
+        <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    </head>
+    <body>
+        <div class="top"><img src="images/top.png"></div>
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul><li></li><li></li><li></li></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href=""><img src="images/banner2.jpg" /></a></li>
+                    <li><a href=""><img src="images/banner2.jpg" /></a></li>
+                    <li><a href=""><img src="images/banner2.jpg" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});</script>
+        <div class="chose">
+            <ul>
+                <li><a href="fl.html" class="theme-login">全部分类<img src="images/down.png"></a></li>
+                <li>价格<img src="images/down.png"></li>
+                <li><a href="sx.html">筛选<img src="images/down.png"></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <a href="spxq.html"><div class="list_info">
+                <div class="drink"><img src="images/drink.png" class="info"></div>
+                <h4>42度金六福酒超级绵柔500ml</h4>
+                <span class="jg">￥38.00</span>
+                <span class="sj">零售价：￥38.00</span>
+                <img src="images/add.png" class="add">
+            </div></a>
+            <div class="list_info">
+                <div class="drink"><img src="images/drink.png" class="info"></div>
+                <h4>42度金六福酒超级绵柔500ml</h4>
+                <span class="jg">￥38.00</span>
+                <span class="sj">零售价：￥38.00</span>
+                <img src="images/add.png" class="add">
+            </div>
+            <div class="list_info">
+                <div class="drink"><img src="images/drink.png" class="info"></div>
+                <h4>42度金六福酒超级绵柔500ml</h4>
+                <span class="jg">￥38.00</span>
+                <span class="sj">零售价：￥38.00</span>
+                <img src="images/add.png" class="add">
+            </div>
+            <div class="list_info"></div>
+        </div>
+        <div class="tc" >
+            <div class="tc_form">
+                <form class="tc_theme" name="loginform" action="" method="post">
+                    <div class="info">确认删除报修吗？</div>
+                    <input class="quxiao" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+                    <input class="tijiao" type="button" value=" 确 定 " onclick="javaScript:window.location.href='';"/>
+                </form>
+            </div>
+        </div>
+        <div class="bg"></div>
+        <footer>
+            <ul>
+                <li><a href="index.html"><img src="images/index.png"></a></li>
+                <li><a href="dd.html"><img src="images/dd.png"></a></li>
+                <li><a href="wd.html"><img src="images/wd.png"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

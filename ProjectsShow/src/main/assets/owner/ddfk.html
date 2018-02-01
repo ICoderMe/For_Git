@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>货运宝--货主端</title>
+    <link href="jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"/>
+    
+    <script type="text/javascript" src="images/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.bg').fadeIn(100);
+                $('.tc').slideDown(100);
+            })
+            $('.tc_top .close').click(function(){
+                $('.bg').fadeOut(100);
+                $('.tc').slideUp(100);
+            })
+        })
+    </script>
+    <script type="text/javascript" src="jquery1.42.min.js"></script>
+    <script type="text/javascript" src="jquery.SuperSlide.2.1.1.js"></script>
+    <style>
+        *{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.title{text-align:center; font-size:22px; color:#ebebeb;height:45px; line-height: 45px;}
+		.left{background:url(images/back.png) no-repeat; width: 29px;height: 37px;display: block;float: left;margin-top:5px;margin-top: 10px;background-size: 80%;}
+		h2{color: #fda348;font-size: 13px;width: 155px;float: left; margin-left:20px; margin-top:14px;}
+		.top{height:280px;background:#ffffff; padding-top:25px; margin-top:5px;}
+		.tc_left{border-right: 1px solid #bbbbbb; height:85%;width: 70%; float:left;}
+		li{height:55px;}
+		.tc_left span{width:48px;height:54px;position:absolute;margin-left:10px;}
+		.address{background:url(images/ts_start.png) no-repeat; }
+		.last{background:url(images/ts_end.png) no-repeat;}
+		.host{background:url(images/ts_host.png) no-repeat;}
+		.time{background:url(images/ts_time.png) no-repeat;margin-left: 15px;}
+		.message{background:url(images/ts_message.png) no-repeat;}
+		p{margin-left: 65px;margin-top: 8spx;position: absolute;}
+		.end{background:url(images/ts_end.png) no-repeat; width:48px;height:54px;position:absolute;margin-top:14px;margin-left:10px;}
+		.tc_right{ margin-top:20px; font-size:15px;height:300px; width:100px; float:left; margin-top:40px; color:#999999;}
+		.tc_right span{color:#fda348; font-size:20px;}
+		.center{position:absolute; margin-top:10px;width: 100%;height: 75px;background: #ffffff;}
+		.center img{width:60%; float:left; height:85%;}
+		.center .tc_line{ background:url(images/line1.png) repeat-x;height:7px;}
+		.center .contect{width:56px; height:26px;height:26px;margin-top:20px; text-align:center;text-decoration:none;                         border-radius:5px;float:left;background:#bbbbbb;color:#ffffff;}
+		.center .choose{width: 70px; height:26px; line-height:26px; margin-left: 10px;margin-top: 20px;text-align: center;                         text-decoration:none; border-radius: 5px;float:left;background:#fda348;color:#ffffff;}
+		.tc_map{margin-top:90px;}
+		.tc_map img{width:100%; height:100%;}
+ 		.footer{margin-top:-5px;position:fixed;bottom:0px;}
+		.footer ul{float:left;width:100%;}
+    	.footer li{list-style:none; float:left; width:24.5%; border-right:1px solid #999; text-align:center; height:44px;                   background:#f3f3f3; line-height:44px;}
+		.footer li a{text-decoration:none; color:#767676;}
+		.footer .last{border-right:none;}
+    </style>
+</head> 
+<body> 
+	<div data-role="header">
+    	<a href="wddd.html" class="left"></a>
+    	<div class="title">等待付款</div>
+    </div> 
+    <div class="top">
+    	<div class="tc_left">
+        	<ul>
+            	<li><span class="address"></span><p>广东广州天河区XX路XX号</p></li>
+                <li><span class="last"></span><p>福建福州仓山区</p></li>
+                <li><span class="host"></span><p>钢材20吨</p></li>
+                <li><span class="time"></span><p>2016-09-09 10:00</p></li>
+                <li><span class="message"></span><p>13米板车，不压车</p></li>
+            </ul>
+        </div>
+        <div class="tc_right">
+        	<td>单号<br>201505080266</td><br><br><br><br>
+            <td>成交<br><span>￥5000</span></td>
+        </div>
+    </div>
+    <div class="center">
+    	<div class="tc_line"></div><img src="images/driver_qr.png">
+        <a href="" class="contect">联系</a>
+        <a href="" class="choose">支付运费</a>   
+    </div>
+
+    
+</body>
+</html>

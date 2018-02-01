@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>智部落-话题自己</title>
+    <link type="text/css" rel="stylesheet" href="css/css.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.bg').fadeIn(100);
+                $('.tc').slideDown(100);
+            })
+            $('.tc_top .close').click(function(){
+                $('.bg').fadeOut(100);
+                $('.tc').slideUp(100);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="gg_top">
+        <a onclick="javascript:history.go(-1)" class="fh"><img src="images/back.png" ></a>
+        <div class="gg-tit"><img src="images/gg_tit.png" ></div>
+        <a href="ht_add.html"  class="add"><img src="images/own_add.png"></a>
+    </div>
+
+    <div class="addlist">
+        <img src="images/ht_zjzk.png" class="one">
+        <a href="javascript:;"><img src="images/ht_del.png" class="two theme-login"></a>
+    </div>
+    <div class="addlist-bottom"><img src="images/ht_speak.png"></div>
+
+    <div class="tc" >
+        <div class="tc_form">
+            <form class="tc_theme" name="loginform" action="" method="post">
+                <div class="info">确认删除话题？</div>
+                <input class="qx" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+                <input class="tj" type="button" value=" 确 定 " onclick="javaScript:window.location.href='';"/>
+            </form>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>智OA-公告</title>
+	<meta name="viewport" content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.theme-login').click(function(){
+				$('.bg').fadeIn(100);
+				$('.tc').slideDown(100);
+			})
+			$('.tc_top .close').click(function(){
+				$('.bg').fadeOut(100);
+				$('.tc').slideUp(100);
+			})
+		})
+	</script>
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<style>
+		*{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.top{background: #f3f3f3;height:40px;}
+		.one{width: 8%;  float: left;  height: 40px;}
+		.top .back{width:10px; margin-left:7px;margin-top:11px;position: absolute;}
+		.top .gg{width: 120px;  padding-top: 7px;}
+		.top .hh{width: 80%; text-align: center;float:left;}
+		.send{font-size:13px;  margin-top:15px; margin-right:3%; color:#333333; text-decoration: none;width:10%;position: absolute;text-align: right;}
+		/*选项卡css */
+		.slideTxtBox{margin-top:1px;}
+		.slideTxtBox .hd{height:45px; line-height:45px; position:relative; }
+		.slideTxtBox .hd ul{color:#5a5a5a; height:45px; width:100%; background:#ffffff;}
+		.slideTxtBox .hd ul li{float:left; cursor:pointer; width:50%;height:45px; line-height:45px; text-align: center;}
+		.slideTxtBox .hd ul li.on{height:45px; line-height:45px; background:#f3f3f3; width:50%; float:left; text-align:center;}
+		.slideTxtBox .bd ul{margin-top:1px; }
+		.slideTxtBox .bd .list_dd img{width:100%; }
+		.slideTxtBox .bd li{ height:24px; line-height:24px;   }
+		.slideTxtBox .bd .list_dl{width:100%; height:45px;background: #ffffff;}
+		.title{font-size: 13px; padding: 5px 0 0 10px;}
+		p{font-size: 12px;  padding: 2px 0 0 10px;}
+		/*弹窗*/
+		.tc{z-index:9999; position:fixed;top:40%;margin-left:13%;width:74%;margin-top:-35px;border-radius:5px;background:#f3f3f3;display:none;}
+		.tc_line{width:100%; height:8px; margin-left:3%;height:36px;}
+		.tc_line img{width:94%;height:36px;}
+		.tc_top {background:#f3f3f3; height:35px;line-height:35px;font-size:15px; text-align:center;letter-spacing:1.2px;color:#6f6f6f;}
+		.tc_form {border-radius: 5px; }
+		.tc_form .info{color:#a4a4a4;font-size:18px;letter-spacing:1.2px;line-height:25px;margin-top:10px;text-align:center;}
+		.bottom{margin-left: 18%;  width: 64%;  height: 24px;}
+		span{width:90px; font-size:14px;color:#c9c9c9;}
+		.quxiao{background:#f3f3f3;border:none;font-size:14px;position:absolute;
+			border-radius:4px;cursor:pointer;color:#a4a4a4;float:left; }
+		.tijiao{background:#f3f3f3;font-size:14px;color:#a4a4a4;border:none;text-align: center;border-radius:4px;cursor:pointer;
+			float: right; }
+		.s_line{float: left;width: 12%;  margin-left: 26%;  text-align: center;  color: #a4a4a4;
+			position: absolute;}
+		.bg{width:100%;height:100%;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5;
+			background:#000000; display:none;z-index:99;}
+		.footer{position: fixed;bottom:0px;height:8%;background: #f3f3f3;width:100%;}
+		.footer img{width: 10%;  margin-left: 12%;  margin-top: 2%;}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<a href="index.html" class="one"><img class="back" src="images/back.png"></a>
+		<div class="hh"><img class="gg" src="images/gg.png"></div>
+		<a href="javascript:;"class="send theme-login">SEND</a>
+	</div>
+	<div class="tc" >
+		<div class="tc_top">只有管理员才能发公告哦~</div>
+		<div class="tc_form">
+			<form class="tc_theme" name="loginform" action="" method="post">
+				<div class="info">没有发公告的权限</div>
+				<div class="tc_line"><img src="images/tc_line.png"></div>
+				<div class="bottom">
+					<input class="quxiao" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+					<div class="s_line">|</div>
+					<input class="tijiao" type="button" value=" 确 定 " onclick="javaScript:window.location.href='gg.html';"/>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="bg"></div>
+
+	<div class="slideTxtBox">
+		<div class="hd">
+			<ul><li>未读</li><li>已读</li></ul>
+		</div>
+		<div class="bd">
+			<ul>
+				<div class="list_dd"><img src="images/info.png"></div>
+			</ul>
+			<ul>
+				<div class="list_dl">
+					<div class="title">测试123</div><p>2016-9-26 11:33:36</p>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+		<div class="footer">
+			<a href="index.html" class="index"><img src="images/index.png"></a>
+			<a href="message.html" class="index"><img src="images/xx.png"></a>
+			<a href="contact.html" class="index"><img src="images/lxr-bj.png"></a>
+			<a href="myself.html" class="index"><img src="images/wd.png"></a>
+		</div>
+</body>
+</html>

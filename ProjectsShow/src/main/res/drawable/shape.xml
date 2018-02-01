@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--s说明:http://blog.csdn.net/to_be_designer/article/details/48162791-->
+    <gradient
+        android:angle="90"
+        android:centerColor="#aaaaaa"
+        android:endColor="#ff0000"
+        android:startColor="#ffffff"
+        android:type="radial"
+        />
+<!--angle属性定义旋转角度。
+    type属性定义颜色的渐变类型。
+    linear属性值：解决如上图所示，渐变上的颜色是线性分布。
+    radial属性值：从内向外渐变，使用该属性值时，必须设置gradientRadius属性。
+    sweep属性值：这个有点说不清楚，它有点像扇形的渐变，具体看图会更明了
+    -->
+</shape>

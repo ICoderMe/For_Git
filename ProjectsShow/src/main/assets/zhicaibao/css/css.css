@@ -1,0 +1,138 @@
+/*所有页面公共部分*/
+*{margin:0; padding:0; list-style:none; font-family:"Microsoft YaHei";}
+a{text-decoration:none; -webkit-tap-highlight-color:transparent;}
+html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+body{background:#efefef;}
+
+.top{height:40px;background: #ff7424;width:100%;}
+.top .back{height:40px;width:13%;float:left;}
+.top .back img{width:15px; float:left; margin-top:10px;  margin-left:10px; }
+.top p{width:74%;float:left; text-align:center;  height:40px;  line-height:40px;  font-size:17px;  color:#ffffff; }
+/*顶部三个*/
+.top span{float: left; width: 13%;  font-size: 13px;  height: 40px;  line-height: 40px; text-align: center;}
+.top span a{text-decoration: none;color:#ffffff;}
+.top .add{ font-size: 25px; }
+/*首页*/
+.top .back .tx{height:30px;width:30px;float:left;background:#d1d1d1;font-size:12px;margin-top:6px; margin-left:10px;border-radius:18px;text-align:center;line-height:27px;color:#ffffff;}
+.top .sz{float: left; width: 13%;  font-size: 13px;  height: 40px;  line-height: 40px; text-align: center; }
+.top .sz img{width: 40%;  margin-top: 12px; }
+.all-info{  width: 100%;  position: absolute;}
+.head_banner{background: #ff7424;width:100%;height:200px; text-align: center;color:#ffffff;}
+.head_banner p{padding-top:67px; font-size: 16px;}
+.head_banner h2{margin-top:10px; font-size: 24px;}
+.head_banner a{color:#ffffff;text-decoration: none;}
+.middle{background:#ffffff; margin-top:15%; position:absolute; width:100%;}
+.middle ul li{height:50px; border-bottom:1px solid #e0e0e0;width:100%;}
+.middle ul li .tb{width:30px; margin-top:15px; margin-left: 15px; float: left;}
+.middle ul li .zh{width:30px; margin-top:12px; margin-left: 15px;  float: left;}
+.middle ul li .tx{width:30px; margin-top:10px; margin-left: 15px;  float: left;}
+.middle ul li p{ width:85px; margin-left:15px; height: 50px;  line-height: 50px;  float: left; color:#333333;}
+.middle ul li .go{float: right;  margin-top: 18px;  margin-right: 13px;width:8px;}
+/*设置*/
+.content li{height: 40px;  background: #ffffff;border-bottom:1px solid #e0e0e0;}
+.content li p{width: 30%; height: 40px;  line-height: 40px;  margin-left: 10px;  float: left; color:#333333; font-size: 15px;}
+.content li img{float: right;  margin-top: 13px;  margin-right: 13px;width:8px;}
+.bottom{height: 45px;  line-height: 45px; text-align: center; font-size: 15px; }
+.bottom p{color:#333333;}
+.bottom p span{color:#040404;text-decoration: underline;}
+.exit{background: #c9c9c9; border:1px solid #888686; border-radius:3px; width:90%; text-align:center; color:#ffffff; height:45px;
+    line-height:45px;  margin-left:5%;  margin-top:16%;}
+.tc{z-index:9999; position:fixed; top:40%; margin-left:3%; width:94%; margin-top:-35px; border-radius:5px; background:#f3f3f3;display:none;}
+.tc_form {border-radius: 5px;}
+.tc_theme{width:100%;}
+.tc_form p{font-size: 16px;  margin-top: 10px;  margin-left: 10%;}
+.tc_form .info {color:#333333; font-size:15px;margin-top:10px;  margin-left:10%; }
+.quxiao{border:none;font-size:14px;color:#009688;float: right;  margin-right: 30%;}
+.tijiao{font-size: 14px;  border:none;  margin-bottom:15px; float: right;  margin-right: -30%; color:#009688;}
+.bg{width:100%;height:100%;top:0;left:0;position:absolute;filter: Alpha(opacity=50);opacity:0.5; background:#000000; display:none;}
+/*修改密码*/
+.up-pwd{margin-top:10px;}
+.up-pwd li{height: 40px;  background: #ffffff;border-bottom:1px solid #e0e0e0;}
+.up-pwd li p{width: 30%; height: 40px;  line-height: 40px;  margin-left: 10px;  float: left; color:#333333; font-size: 15px;}
+.up-pwd li img{float: right;  margin-top: 13px;  margin-right: 13px;width:8px;}
+/*修改密码一步*/
+.js{width:100%;font-size: 14px;text-align: center;height:40px;line-height: 40px;}
+.update li{height: 40px;  background: #ffffff;border-bottom:1px solid #e0e0e0;line-height: 40px;font-size: 14px;padding-left: 15px;}
+.update li span{font-size: 14px;color:#999999;}
+.next{background:#ff7524; border-radius:3px; width:90%; text-align:center;  height:45px;line-height:45px; margin-left:5%; margin-top:3%;}
+.next a{color:#ffffff;text-decoration: none;}
+/*修改密码下一步*/
+.dx{width:95%;font-size: 14px;margin:40px 0 0 15px;height:40px;line-height: 40px;color:#999999;}
+.update li p{width: 31%; float: right;  font-size: 14px;color:#999999;}
+.two{margin-top:15%;}
+/*修改成功*/
+.content-cg{text-align: center;}
+.content-cg img{width:40px;margin-top:10%;}
+.content-cg p{font-size: 14px;color:#808080;}
+/*关于我们*/
+.about{margin-top:10px;}
+.about .lx{width:93%; margin-left:2%;background: #ffffff; border:1px solid #e0e0e0;padding-left:10px;color:#818181;font-size: 14px;}
+.about .fs{ height:40px; line-height:35px;}
+.about .nr{height: 130px;   margin-top: 10px;line-height:25px;padding-right: 2px;}
+/*设置指纹*/
+.szzw{height:91%;position: absolute;overflow-x: hidden;}
+.szzw img{width:100%;}
+/*收益明细*/
+.symx{height:240px;background: #ffffff;width:100%;}
+.symx li{width: 49%;  float: left;  height: 120px; }
+.symx li:nth-child(2){border-left:1px solid #c9cbcd;}
+.symx li:nth-child(3){border-right:1px solid #c9cbcd;border-top:1px solid #c9cbcd;}
+.symx li:nth-child(4){border-top:1px solid #c9cbcd;}
+.symx li span{margin-top:35px; position:absolute; font-size: 14px; text-align: center; width:49%;}
+.symx li p{text-align:center; color:#c9c9c9; font-size: 20px;margin-top:35px;}
+/*日收益明细*/
+.rsymx{width:100%;}
+
+.rsymx li{height:50px;width:100%;border-bottom:1px solid #e0e0e0;margin-top:5px;}
+.rsymx h2{font-size: 14px;color:#000000;font-weight: normal;}
+.rsymx p{color:#c9c9c9;}
+.rsymx li .up_left{float:left; width:182px; margin-left:20px;}
+.rsymx li .up_right{float:right; width:85px; margin-right:15px; text-align: right;}
+.rsymx li .down_left{ width:182px; float:left;margin-left:20px;font-size:13px; height:24px; line-height:24px;}
+.rsymx li .down_right{ float:right;margin-right:15px;width:95px;font-size:13px; height:24px; line-height:24px;text-align: right;}
+/*明细*/
+.mx li:nth-child(1){height:110px;width:100%;border:1px solid #e0e0e0;}
+.mx li:nth-child(2){height:50px;width:100%;border-bottom:1px solid #e0e0e0;margin-top:5px;}
+.mx li:nth-child(3){height:50px;width:100%;border-bottom:1px solid #e0e0e0;margin-top:5px;}
+.mx h2{font-size: 14px;color:#000000;}
+.mx p{color:#c9c9c9;}
+.mx li .up{margin:30px 0 0 20px;}
+.mx li .down{font-size: 30px;margin-left:20px;}
+.mx li .up_left{float:left; width:182px; margin-left:20px;}
+.mx li .up_right{float:right; width:85px; margin-right:5px;}
+.mx li .down_left{ width:182px; float:left;margin-left:20px;font-size:13px; height:24px; line-height:24px;}
+.mx li .down_right{ float:right;margin-right:6px;width:95px;font-size:13px; height:24px; line-height:24px;}
+/*账户信息*/
+.zhxx{width:100%;height:200px;background: #ff7424;text-align: center;color:#ffffff;}
+.zhxx img{width:100px;margin-top:30px;}
+.zhxx p{font-size:14px;margin-top:10px;}
+.message{margin-top:10px;}
+.message li{height:40px;background: #ffffff;width:100%;border-bottom: 1px solid #e0e0e0;font-size: 14px;}
+.message li p{width:70px;  margin-left:10px; float:left;  line-height:40px;}
+.message li span{width:70px;  margin-left:10px; float:left;  line-height:40px; color:#999999;}
+/*更换头像*/
+.ghtx img{width:100%;}
+/*添加银行卡*/
+.bdyhk{width:95%;font-size: 14px;margin-left:15px;height:40px;line-height: 40px;color:#999999;}
+.ty{margin-left:15px;font-size: 14px;color:#999999;margin-top:10px;}
+.ty .bz{color:#ff7524; text-decoration: none;}
+/*快速提现*/
+.kstx{margin-top:10px;}
+.kstx ul li{height:40px;width:100%; background: #ffffff;}
+.kstx ul li:nth-child(1){border-bottom:1px solid #e0e0e0;}
+.kstx ul li .tb{width:30px;margin:10px 0 0 17px; float:left;}
+.kstx ul li p{  width: 98px;  float: left;  margin-left: 9px;  font-size: 14px;  line-height: 40px;}
+.kstx ul li .je{width:58px; margin-left:17px;}
+.kstx ul li span{  font-size: 14px;  line-height: 40px;  color: #999999;}
+.kstx ul li .go{width:12px;float:right;margin:10px 20px 0 0;}
+.con-kstx p{color: #999999; font-size: 13px;  width: 56%;  margin-left: 15px;  float: left;  height: 30px;  line-height: 30px;}
+.con-kstx .wj{background:#ff7424; height:30px; line-height:30px; font-size:13px; border-radius:3px; float:right; width:25%; text-align:center; color:#ffffff; margin-right: 5px; text-decoration: none;}
+.tc-top{height:30px;border-bottom: 1px solid #999999;text-align: center;line-height: 30px;}
+.tc-top .close{margin-left:20px;font-size:18px; color:#999999;  float: left;}
+.tc-content{height: 100px;  width: 80%;  margin-left: 10%;}
+.tc-content li{height: 40px; width: 15%;border: 1px solid #999999;  margin: 25px 0 25px 0;  float:left;}
+/*银行卡保障*/
+.yhkbz{font-size:12px; height:22px; line-height:22px; margin:15px 5px;}
+.yhkbz a{color:blue;}
+/*详情*/
+.xq img{width:100%;}

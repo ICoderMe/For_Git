@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>货运宝--司机端</title>
+    <link href="jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"/>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.bg').fadeIn(100);
+                $('.tc').slideDown(100);
+            })
+            $('.tc_top .close').click(function(){
+                $('.bg').fadeOut(100);
+                $('.tc').slideUp(100);
+            })
+        })
+    </script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.pj-login').click(function(){
+                $('.bg_pj').fadeIn(100);
+                $('.pj').slideDown(100);
+            })
+            $('.tc_top .close').click(function(){
+                $('.bg_pj').fadeOut(100);
+                $('.pj').slideUp(100);
+            })
+        })
+    </script>
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <style>
+        *{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.title{text-align:center; font-size:22px; color:#ebebeb;height: 45px;  line-height: 40px;}
+		.list_dd{height:125px; background:#ffffff;margin-top: 10px;}
+		.top_line{background:url(images/line1.png) repeat-x; height:6px;}
+		 .tit{color: #fda348;font-size: 13px;width: 155px;float: left; margin-left:7px; margin-top:5px;}
+		 .zzts{text-decoration:none; font-size:15px; color:#bbbbbb;margin-right:3%;margin-top:5px;float:right;}
+
+		.bottom_line{border:1px solid #cecece; margin-top:27px;margin-left:8px;margin-right: 8px;}
+		.left_content{color:#333333; font-size:14px; margin-left:20px; margin-top:10px; float:left; line-height:25px;
+            position:absolute;}
+		.update{width:62px; height:25px;background:#bbbbbb; border-radius:6px;text-decoration: none;text-align: center;
+            line-height:25px;color: #ffffff;float: right;margin-right: 5%;margin-top: 20px;}
+        .pj_btn{background:#fda348;width:62px; height:25px;border-radius:6px;text-decoration: none;text-align: center;
+            line-height:25px;color: #ffffff;float: right;margin-right: 5%;margin-top: 20px; }
+		/*选项卡css */
+		.slideTxtBox{}
+		.slideTxtBox .hd{height:30px; line-height:30px; padding:0 10px 0 20px; position:relative; }
+		.slideTxtBox .hd ul{color:#ffffff;}
+		.slideTxtBox .hd ul li{float:left; cursor:pointer; width:46%;background:#bbbbbb;text-align:center;height:45px;
+            border-radius: 10px; line-height:45px;}
+		.slideTxtBox .hd ul li.on{height:45px;line-height:45px;background:#fda348;}
+		.slideTxtBox .hd ul .wc{margin-left:20px;}
+		.slideTxtBox .bd ul{ padding:15px;  zoom:1;  }
+		.slideTxtBox .bd li{ height:24px; line-height:24px;   }
+		.slideTxtBox .bd li .date{ float:right; color:#999;  }
+		.footer{margin-top:0px; position:fixed; bottom:0px; width:100%;}
+		.footer ul{float:left;width:100%;}
+    	.footer li{list-style:none; float:left; width:24.5%; border-right:1px solid #999; text-align:center; height:44px; background:#f3f3f3; line-height:44px;}
+		.footer li a{text-decoration:none; color:#767676;}
+		.footer .last{border-right:none;}
+
+        .tc {z-index:9999; position:fixed; top:25%; margin-left: 2%; width:95%; margin-top:-35px;
+            border-radius:5px;  background: #f3f3f3;  display:none; }
+        .tc_line{background: url("images/grey_line.png") repeat-x; width:100%; height:8px;}
+        .tc_top {background:#bbbbbb; height:35px;font-size:22px; text-align:center;letter-spacing:1.2px;color:#ffffff;}
+        .tc_form {border-radius: 5px;}
+        .tc_theme{width:100%;}
+        .tc_form .info {color:#333333; font-size:18px; letter-spacing:1.2px; line-height:25px;margin-top:10px;
+            text-align:center; }
+        span{width:90px;  font-size:14px;color:#c9c9c9;}
+        .quxiao{height:22%;width:20%; background:#dedede;border:none;font-size:14px;margin-top:15px;border-radius:4px;
+            cursor:pointer; margin-left:27%; line-height: 29px;}
+        .tijiao{height:22%; width:20%; background: #fda448; font-size: 14px; color:#ffffff; text-align: center;
+            border:none; border-radius: 4px; line-height: 29px;cursor: pointer; margin-top:15px; margin-left:2%; margin-right:7%;}
+        .bg{width:100%;height:100%;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5;
+            background:#000000; display:none;}
+
+        /*报价弹窗*/
+        .pj {z-index:9999; position:fixed; top:25%; margin-left: 2%; width:95%; margin-top:-35px;
+            border-radius:5px;  background: #eeeeee;  display:none;  }
+        .pj_line{background: url("images/line.png") repeat-x; width:100%; height:8px;}
+        .pj_top {background:#fda348; height:35px;font-size:22px; text-align:center;letter-spacing:1.2px;color:#ffffff;}
+        .pj_form {border-radius: 5px;width:80%; margin-left:9%}
+        .pj_form .info {color:#333333; font-size:16px; letter-spacing:1.2px; line-height:25px;margin-top:5px;
+            text-align:center; }
+        .info_pj img{width:100%; margin-top: 5px;}
+        span{width:90px;  font-size:14px;color:#c9c9c9;}
+        .quxiao_pj{height:40px;width:90px; background:#dedede;border:none;font-size:14px;margin-top:15px;border-radius:4px;
+            cursor:pointer; margin-left:2%;}
+        .tijiao_pj{height:40px; width:90px; background: #fda448; font-size: 14px; color:#ffffff; text-align: center;
+            border:none; border-radius: 4px; cursor: pointer; margin-top:15px; float:right;margin-right:2%;}
+        .bg_pj{width:100%;height:100%;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5;
+            background:#000000; display:none;}
+    </style>
+</head> 
+<body> 
+	<div data-role="header">
+    	<div class="title">我的订单</div>
+    </div> 
+<div class="slideTxtBox">
+			<div class="hd">	
+				<ul><li>进行中</li><li class="wc">已完成</li></ul>
+			</div>
+            
+			<div class="bd">
+				<ul>
+					<div class="list_dd">
+                        <div class="top_line"></div>
+                        <div class="tit">订单号： 201505080266</div>
+                        <a href="jdz.html" class="zzts">竞价中&nbsp;&nbsp;></a>
+                        <div class="bottom_line"></div>
+                        <div class="left_content">
+                            起点：河北霸州上源金属集团<br>
+                            终点：上海虹桥 <br>
+                            货物：钢条20吨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报价:￥5500<br>
+                        </div>
+                        <a href="javascript:;" class="update baojia theme-login">放弃</a>
+       				</div>
+                    <div class="list_dd">
+                        <div class="top_line"></div>
+                        <div class="tit">订单号： 201505080266</div>
+                        <a href="qrsk.html" class="zzts">等待收款></a>
+                        <div class="bottom_line"></div>
+                        <div class="left_content">
+                            起点：河北霸州上源金属集团<br>
+                            终点：上海虹桥 <br>
+                            货物：钢条20吨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成交价:￥5500<br>
+                        </div>
+       				</div>
+				</ul>
+				<ul>
+                    <div class="list_dd">
+                        <div class="top_line"></div>
+                        <div class="tit">订单号： 201505080266</div>
+                        <a href="ddywc.html" class="zzts">订单完成></a>
+                        <div class="bottom_line"></div>
+                        <div class="left_content">
+                            起点：河北霸州上源金属集团<br>
+                            终点：上海虹桥 <br>
+                            货物：钢条20吨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成交价:￥5500<br>
+                        </div>
+                        <a href="javascript:;" class="pj_btn pj-login">评价</a>
+                    </div>
+                    <div class="list_dd">
+                        <div class="top_line"></div>
+                        <div class="tit">订单号： 201505080266</div>
+                        <a href="ddywc_pj.html" class="zzts">订单完成></a>
+                        <div class="bottom_line"></div>
+                        <div class="left_content">
+                            起点：河北霸州上源金属集团<br>
+                            终点：上海虹桥 <br>
+                            货物：钢条20吨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成交价:￥5500<br>
+                        </div>
+
+                    </div>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+
+    <div class="tc" >
+        <div class="tc_top">放弃竞单</div>
+        <div class="tc_line"></div>
+        <div class="tc_form">
+            <form class="tc_theme" name="loginform" action="" method="post">
+                <div class="info">是否放弃竞单？</div>
+                <input class="quxiao" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+                <input class="tijiao" type="button" value=" 确 定 " onclick="javaScript:window.location.href='wddd.html';"/>
+            </form>
+        </div>
+    </div>
+    <div class="bg"></div>
+
+
+    <div class="pj" >
+        <div class="pj_top">请对货主评价</div>
+        <div class="pj_line"></div>
+        <div class="pj_form">
+            <form class="tc_theme" name="loginform" action="" method="post">
+                <div class="info_pj"><img src="images/pj.png"></div>
+                <input class="quxiao_pj" type="submit" name="submit" value= "返回" onclick="javascript:history.go(-1)"/>
+                <input class="tijiao_pj" type="button" value=" 确定 " onclick="javaScript:window.location.href='ddywc_pj.html';"/>
+            </form>
+        </div>
+    </div>
+    <div class="bg_pj"></div>
+
+        <div class="footer">
+        	
+        	<ul>
+            	<li><a href="index.html" >首页</a></li>
+                <li><a href="news.html" >消息</a></li>
+                <li><a href="wddd.html" style="color:#F90">订单</a></li>
+                <li class="last"><a href="myself.html" >我的</a></li>
+            </ul>
+         </div>
+</body>
+</html>

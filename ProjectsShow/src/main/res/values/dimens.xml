@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="titlebar">27dp</dimen>
+    <dimen name="leftside">13dp</dimen>
+    <!--item-->
+    <dimen name="jianxi_icon">8dp</dimen>
+    <dimen name="jianxi_text">10dp</dimen>
+    <dimen name="jianxi_date">5dp</dimen>
+    <!--detail-->
+    <dimen name="playbar">36dp</dimen>
+
+</resources>

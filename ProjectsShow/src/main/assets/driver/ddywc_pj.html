@@ -1,0 +1,127 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>货运宝--司机端</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile-1.2.0.css" type="text/javascript"></script>
+    <script type="js/text/javascript" src="jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.bg').fadeIn(100);
+                $('.tc').slideDown(100);
+            })
+            $('.tc_top .close').click(function(){
+                $('.bg').fadeOut(100);
+                $('.tc').slideUp(100);
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        function change(){
+            obj = document.getElementById("graph");//地图
+            ab = document.getElementById("ws");
+            if(obj.style.display =="none"){
+                obj.style.display="block";
+                ab.style.display="block";
+            }else{
+                obj.style.display="none";
+                ab.style.display="block";
+            }
+        }
+    </script>
+    <script>
+        function MenuShow(){
+            var btn=document.getElementById("BtnShow");
+            var div=document.getElementById("DivMenu");
+            var div1=document.getElementById("DivMenu1");
+
+            if(btn.value.match(/\前往起点/)){
+                btn.value=btn.value.replace(/\前往起点/,'线路规划');
+                div.style.display='block';
+                div1.style.display='none';
+            }
+            else{
+                btn.value=btn.value.replace(/线路规划/,'前往起点');
+                div.style.display='none';
+                div1.style.display='block';
+            }
+        }
+    </script>
+    <style>
+        *{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ; }
+		body{background:#333333;}
+        .header{position: absolute;  width: 100%;  height: 40px;}
+        .back{text-decoration:none;  float:left;  color:#ebebeb;  font-size:35px;  height:45px; line-height: 40px;}
+        .title{font-size:22px; color:#ebebeb; text-align: center;height:45px; line-height: 40px;}
+        .info_img{width: 100%;   z-index: 0; margin-top:5px; }
+        a#ws{height:34px;}
+        .map{width:100%;position: absolute;  z-index: -9;  top: 40px;}
+        .dir_down{width:100%;top:40px;z-index: -8; height:34px;position: relative;}
+        .xlgh{width:68px; height:28px; border:1px solid #000000; position:absolute; border-radius:5px; line-height:25px;
+            font-size:14px; text-align: center; background:#ffffff; cursor:pointer; left:72%; margin-top:40px;}
+        /*报价弹窗*/
+        .tc {z-index:9999; position:fixed; top:25%; margin-left: 2%; width:95%; height:50%; margin-top:-35px;
+            border-radius:5px;  background: #eeeeee;  display:none;  }
+        .tc_line{background: url("images/line.png") repeat-x; width:100%; height:8px;}
+        .tc_top {background:#fda348; height:35px;font-size:22px; text-align:center;letter-spacing:1.2px;color:#ffffff;}
+        .tc_form {border-radius: 5px;width:80%; margin-left:9%}
+        .tc_form .info {color:#333333; font-size:16px; letter-spacing:1.2px; line-height:25px;margin-top:5px;
+            text-align:center; }
+        .info img{width:100%;}
+        span{width:90px;  font-size:14px;color:#c9c9c9;}
+        .quxiao{height:40px;width:90px; background:#dedede;border:none;font-size:14px;margin-top:15px;border-radius:4px;
+            cursor:pointer; margin-left:2%;}
+        .tijiao{height:40px; width:90px; background: #fda448; font-size: 14px; color:#ffffff; text-align: center;
+            border:none; border-radius: 4px; cursor: pointer; margin-top:15px; float:right;margin-right:2%;}
+        .bg{width:100%;height:100%;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5;
+            background:#000000; display:none;}
+        .xlgh{width:68px; height:28px; border:1px solid #000000; position:absolute; border-radius:5px; line-height:25px;
+            font-size:14px; text-align: center; background:#ffffff; cursor:pointer; left:72%; margin-top:40px; }
+    </style>
+</head> 
+<body>
+        <div class="header">
+            <a href="wddd.html" class="back"><</a>
+            <div class="title">订单已完成</div>
+        </div>
+        <div class="info">
+            <!--<a href="javascript:" onclick="change()">
+                    <div id="graph"style="height:300px;">
+                        <img class="info_img" src="images/qrsk.png">
+                    </div>
+                </a>
+            <a href="javascript:" onclick="change()">
+                <div id="ws"><img  class="dir_down" src="images/dir_down.png" ></div>
+            </a>
+            <img class="map" src="images/map1.png">-->
+            <a href="javascript:"  id="ws" onclick="change()">
+                <img  class="dir_down" src="images/dir_down.png"  >
+            </a>
+            <a href="javascript:" id="graph" onclick="change()">
+                <img class="info_img" src="images/qrsk.png">
+            </a>
+            <img class="map" src="images/map1.png">
+            <input class="xlgh" id="BtnShow" type="button" value="前往起点" onclick="MenuShow()" />
+            <div id="DivMenu" style="display:none;"><img class="map" src="images/map1.png"></div>
+            <div id="DivMenu1" style="display:block;"><img class="map" src="images/xlgh.png"></div>
+        </div>
+
+
+        <div class="tc" >
+            <div class="tc_top">请对货主评价</div>
+            <div class="tc_line"></div>
+            <div class="tc_form">
+                <form class="tc_theme" name="loginform" action="" method="post">
+                    <div class="info"><img src="images/pj.png"></div>
+                    <input class="quxiao" type="submit" name="submit" value= "返回" onclick="javascript:history.go(-1)"/>
+                    <input class="tijiao" type="button" value=" 确定 " onclick="javaScript:window.location.href='';"/>
+                </form>
+            </div>
+        </div>
+        <div class="bg"></div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>编辑店铺信息-商铺端-智部落</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <a href="shop-info.html"><i class="go_back  icon-angle-left"></i></a>
+    <h1 class="title">ZDCLAN</h1>
+</header>
+<h1 class="sub-title top-margin">店铺信息</h1>
+<form class="info-form" method="post" action="">
+<ul class="shop-info">
+    <li class="li-top">
+        <label>店铺名称</label>
+        <input type="text" class="info-txt" name="shop-name">
+    </li>
+    <li>
+        <label>地址</label>
+        <input type="text" class="info-txt" name="address">
+        <a href="location.html" class="location">定位</a>
+    </li>
+    <li>
+        <label>联系电话</label>
+        <input type="text" class="info-txt" name="phone">
+    </li>
+    <li class="li-top">
+        <label>关键字</label>
+        <input type="text" class="info-txt" name="key">
+    </li>
+    <li class="shop-class-con">
+        <label class="right-icon">商家类型</label>
+        <input type="text" class="info-txt" name="shop-class" readonly id="shop-class">
+    </li>
+    <li class="li-top">
+        <label>人均消费额</label>
+        <input type="text" class="info-txt" name="expenditure">
+    </li>
+    <li class="li-top clear">
+        <label class="middle-txt">上传营业执照</label>
+        <a href="javascript:;" class="img-file" title="上传图片">
+            <img src="images/default.png" alt="默认图片" class="upload-img">
+            <input type="file" name="" id="img-btn1" class="img-btn">
+        </a>
+    </li>
+    <li class="li-top clear">
+        <label class="middle-txt">上传店主身份证</label>
+        <a href="javascript:;" class="img-file" title="上传图片">
+            <img src="images/default.png" alt="默认图片" class="upload-img">
+            <input type="file" name="" id="img-btn2" class="img-btn">
+        </a>
+        <a href="javascript:;" class="img-file" title="上传图片">
+            <img src="images/default.png" alt="默认图片" class="upload-img">
+            <input type="file" name="" id="img-btn3" class="img-btn">
+        </a>
+    </li>
+    <li class="clear">
+        <label class="middle-txt">商铺图片</label>
+        <a href="javascript:;" class="img-file" title="上传图片">
+            <img src="images/default.png" alt="默认图片" class="upload-img">
+            <input type="file" name="" id="img-btn4" class="img-btn">
+        </a>
+        <a href="javascript:;" class="img-file" title="上传图片">
+            <img src="images/default.png" alt="默认图片" class="upload-img">
+            <input type="file" name="" id="img-btn5" class="img-btn">
+        </a>
+        <a href="javascript:;" class="img-file" title="上传图片">
+            <img src="images/default.png" alt="默认图片" class="upload-img">
+            <input type="file" name="" id="img-btn6" class="img-btn">
+        </a>
+    </li>
+    <li class="li-top">
+        <a href="wm-set.html" class="link_btn">
+            <label class="right-icon">外卖设置</label>
+        </a>
+    </li>
+    <li class="li-top">
+        <label>店铺说明</label>
+        <textarea class="shop-explain" placeholder="请按照如下格式填写您的团购内容。商家介绍：例如营业面积、本店特色等；合作店数；套餐/产品；人均消费。"></textarea>
+    </li>
+</ul>
+<input type="submit" class="info-btn" value="提交" name="info-btn">
+</form>
+<!-- 商家类型 -->
+<ul class="shop-class-box">
+    <li>美食</li>
+    <li>休闲娱乐</li>
+    <li>周边游</li>
+    <li>酒店</li>
+    <li>购物</li>
+    <li>就医</li>
+    <li>出行</li>
+    <li>其他</li>
+</ul>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        //上传图片
+        $(".img-btn").change(function(){
+            var objUrl = getObjectURL(this.files[0]) ;
+            if (objUrl) {
+                $(this).prev(".upload-img").attr("src", objUrl) ;
+            }
+        });
+        //建立一個可存取到該file的url
+        function getObjectURL(file) {
+            var url = null ;
+            if (window.createObjectURL!=undefined) { // basic
+                url = window.createObjectURL(file) ;
+            } else if (window.URL!=undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file) ;
+            } else if (window.webkitURL!=undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file) ;
+            }
+            return url ;
+        }
+        $(".shop-class-box").css("margin-top",-$(".shop-class-box").height()/2+"px");
+        $(".shop-class-con").on("click",function(){
+            $(".shop-class-box").show();
+            var layer=document.createElement("div");
+            layer.id="layer";
+            layer.style.width=layer.style.height="100%";
+            layer.style.position="fixed";
+            layer.style.top=layer.style.left=0;
+            layer.style.backgroundColor="#333";
+            layer.style.zIndex="9997";
+            layer.style.opacity="0.6";
+            document.body.appendChild(layer);
+        });
+        $(".shop-class-box li").on("click",function(){
+            $("#shop-class").val($(this).text());
+            $(".shop-class-box").hide();
+            $('div#layer').remove();
+        });
+    });
+</script>
+</body>
+</html>

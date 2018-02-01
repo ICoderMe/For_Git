@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>智部落-投诉</title>
+        <link type="text/css" rel="stylesheet" href="css/css.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                $('.theme-login').click(function(){
+                    $('.bg').fadeIn(100);
+                    $('.tc').slideDown(100);
+                })
+                $('.tc_top .close').click(function(){
+                    $('.bg').fadeOut(100);
+                    $('.tc').slideUp(100);
+                })
+            })
+        </script>
+        <!--重新投诉-->
+        <script>
+            jQuery(document).ready(function($) {
+                $('.theme-cx').click(function(){
+                    $('.bg_cx').fadeIn(100);
+                    $('.tc_cx').slideDown(100);
+                })
+                $('.tc_top .close').click(function(){
+                    $('.bg_cx').fadeOut(100);
+                    $('.tc_cx').slideUp(100);
+                })
+            })
+        </script>
+        <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    </head>
+    <body>
+        <div class="gg_top ts">
+           <a onclick="javascript:history.go(-1)" class="fh"><img src="images/ts_back.png"></a>
+            <div class="gg-tit"><img src="images/ts_tit.png" ></div>
+            <a href="ts_add.html" class="add"><img src="images/add.png" ></a>
+        </div>
+
+        <div class="slideTxtBox">
+            <div class="hd">
+                <ul><li>我的投诉</li><li>全部投诉</li></ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <div class="list_dd">
+                        <img src="images/ts_info.png">
+                        <div class="ts_bottom">
+                           <a  href="javascript:;" class="sc theme-login aa">删除投诉</a>
+                           <a  href="javascript:;" class="sl  aa">等待受理</a>
+                        </div>
+                    </div>
+                    <div class="list_dd">
+                        <img src="images/ts_info.png">
+                        <div class="ts_bottom">
+                            <a  href="javascript:;" class="sc theme-cx aa">重新投诉</a>
+                            <a  href="" class="sl theme-login aa">确认解决</a>
+                        </div>
+                    </div>
+                    <div class="list_dd">
+                        <img src="images/ts_info.png">
+                        <div class="ts_bottom">
+                            <a  href="javascript:;" class="sc del theme-login aa">删除投诉</a>
+                            <a  href="javascript:;" class="sc cx theme-cx aa">重新投诉</a>
+                            <a  href="pj.html" class="sl pj aa">评价</a>
+                        </div>
+                    </div>
+                    <div class="list_dd">
+                        <img src="images/ts_info.png">
+                        <div class="ts_bottom">
+                            <a  href="javascript:;" class="sc del  aa">删除投诉</a>
+                            <a  href="javascript:;" class="sc cx  aa">重新投诉</a>
+                            <a  href="ypj.html" class="sl ypj aa">已评价</a>
+                        </div>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="list_dd">
+                        <img src="images/qb_info.png">
+                        <div class="ts_bottom">
+                            <a  href="javascript:;" class="zzjj sc theme-login aa">正在解决</a>
+                        </div>
+                    </div>
+                    <div class="list_dd">
+                        <img src="images/qb_info.png">
+                        <div class="ts_bottom">
+                            <a href="" class="zzjj sc theme-login aa">待解决</a>
+                        </div>
+                    </div>
+                    <div class="list_dd">
+                        <img src="images/qb_info.png">
+                        <div class="ts_bottom">
+                            <a  href="ypj.html" class="sl ypj aa">已评价</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+
+        <div class="tc" >
+            <div class="tc_form">
+                <form class="tc_theme" name="loginform" action="" method="post">
+                    <div class="info">确认删除投诉吗？</div>
+                    <input class="qx" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+                    <input class="tj" type="button" value=" 确 定 " onclick="javaScript:window.location.href='';"/>
+                </form>
+            </div>
+        </div>
+        <div class="bg"></div>
+
+    <!--重新及投诉-->
+        <div class="tc_cx" >
+        <div class="tc_form">
+            <form class="tc_theme" name="loginform" action="" method="post">
+                <div class="info">确认重新投诉吗 ？</div>
+                <input class="qx" type="submit" name="submit" value= "返 回" onclick="javascript:history.go(-1)"/>
+                <input class="tj" type="button" value=" 确 定 " onclick="javaScript:window.location.href='';"/>
+            </form>
+        </div>
+        </div>
+        <div class="bg_cx"></div>
+
+    </body>
+</html>

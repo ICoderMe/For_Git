@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>智OA-销管</title>
+	<meta name="viewport" content="width=device-width maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<style>
+		*{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.top{background:#f3f3f3; position: fixed; top:0;  height: 40px;  width: 100%;}
+		.top .back{width:10px; margin-left:7px;margin-top:11px;position: absolute;}
+		.top .gg{width: 120px;  padding-top: 7px;}
+		.top .hh{width: 100%; text-align: center;}
+		.ts{color:#ffffff;font-size:10px; width:100%; height:32px; line-height:32px; text-align:center; position:fixed; top:40px; display:block; background:#333333;}
+		/*选项卡css */
+		.slideTxtBox{margin-top:1px;}
+		.slideTxtBox .hd{width:26%; float:left; position:relative;cursor: pointer; }
+		.slideTxtBox .hd ul li{background: url("images/55_06.png") no-repeat; background-size:99%;}
+		.slideTxtBox .hd ul li.on{background: url("images/55_02.png") no-repeat; background-size:99%;}
+		.slideTxtBox .hd ul li:nth-child(2){margin-top:-4px;}
+		.slideTxtBox .hd ul li:nth-child(3){margin-top:-4px;}
+		.slideTxtBox .hd{ margin-top: 80px;  position: fixed;}
+		.slideTxtBox .hd ul li img{width:100%;}
+		.slideTxtBox .bd ul{margin-top:1px; }
+		.slideTxtBox .bd .list_dd img{width:100%; }
+		.slideTxtBox .bd li{ height:24px; line-height:24px;   }
+
+		.right{width:73%;float:left;margin-top: 80px;margin-left:26%;}
+		.right img{float:left;width:100%;}
+		p{font-size: 12px;  padding: 2px 0 0 10px;}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<a href="index.html"><img class="back" src="images/back.png"></a>
+		<div class="hh"><img class="gg" src="images/xg_tit.png"></div>
+	</div>
+	<div class="ts">功能模块包括工作计划，客户管理，商机管理三个模块</div>
+	<div class="slideTxtBox">
+		<div class="hd">
+			<ul>
+				<li><img src="images/gzjh1.png" class="sy"></li>
+				<li><img src="images/khgl1.png" class="bb"></li>
+				<li><img src="images/sjgl1.png" class="bb"></li>
+			</ul>
+		</div>
+		<div class="bd">
+			<ul>
+				<div class="right">
+					<a href=""><img src="images/sp/xg_one.png" ></a>
+					<a href=""><img src="images/sp/xg_two.png"></a>
+					<a href=""><img src="images/sp/xg_three.png" ></a>
+					<a href=""><img src="images/sp/xg_fore.png"></a>
+					<a href=""><img src="images/sp/xg_five.png" ></a>
+					<a href=""><img src="images/sp/xg_six.png" ></a>
+					<a href=""><img src="images/sp/xg_seven.png" ></a>
+					<a href=""><img src="images/sp/xg_eight.png" ></a>
+					<a href=""><img src="images/sp/xg_nine.png" ></a>
+					<a href=""><img src="images/sp/xg_ten.png"></a>
+				</div>
+			</ul>
+			<ul>
+				<div class="right">
+					<a href="tjkh.html"><img src="images/sp/kh_one.png" ></a>
+					<a href="mbkh.html"><img src="images/sp/kh_two.png"></a>
+					<a href="mbkh.html"><img src="images/sp/kh_three.png" ></a>
+					<a href="mbkh.html"><img src="images/sp/kh_fore.png"></a>
+					<a href="khc.html"><img src="images/sp/kh_five.png" ></a>
+					<a href="rfx.html"><img src="images/sp/kh_six.png" ></a>
+					<a href=""><img src="images/sp/kh_seven.png" ></a>
+
+				</div>
+			</ul>
+			<ul>
+				<div class="right">
+					<a href="tjsj.html"><img src="images/sp/sj_one.png" ></a>
+					<a href="cksj.html"><img src="images/sp/sj_two.png"></a>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">jQuery(".slideTxtBox").slide({trigger:"click"});</script>
+</body>
+</html>

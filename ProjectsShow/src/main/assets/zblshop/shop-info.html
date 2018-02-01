@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>店铺信息-商铺端-智部落</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <a href="index.html"><i class="go_back  icon-angle-left"></i></a>
+    <h1 class="title">ZDCLAN</h1>
+    <a href="edit-shop-info.html" class="edit-btn">编辑</a>
+</header>
+<h1 class="sub-title top-margin">店铺信息</h1>
+<ul class="shop-info">
+    <li class="li-top">
+        <label>店铺名称</label>
+        <input type="text" class="info-txt" name="shop-name" readonly>
+    </li>
+    <li>
+        <label>地址</label>
+        <input type="text" class="info-txt" name="address" readonly>
+    </li>
+    <li>
+        <label>联系电话</label>
+        <input type="text" class="info-txt" name="phone" readonly>
+    </li>
+    <li class="li-top">
+        <label>关键字</label>
+        <input type="text" class="info-txt" name="key" readonly>
+    </li>
+    <li>
+        <label>商家类型</label>
+        <input type="text" class="info-txt" name="shop-class" readonly>
+    </li>
+    <li class="li-top">
+        <label>人均消费额</label>
+        <input type="text" class="info-txt" name="expenditure" readonly>
+    </li>
+    <li class="li-top clear">
+        <label class="middle-txt">上传营业执照</label>
+        <img src="images/default.png" alt="默认图片" class="img-file">
+    </li>
+    <li class="li-top clear">
+        <label class="middle-txt">上传店主身份证</label>
+        <img src="images/default.png" alt="默认图片" class="img-file">
+        <img src="images/default.png" alt="默认图片" class="img-file">
+    </li>
+    <li class="clear">
+        <label class="middle-txt">商铺图片</label>
+        <img src="images/default.png" alt="默认图片" class="img-file">
+        <img src="images/default.png" alt="默认图片" class="img-file">
+        <img src="images/default.png" alt="默认图片" class="img-file">
+    </li>
+    <li class="li-top">
+        <label>是否有外卖</label>
+        <div class="radio-box">
+            <input type="radio" class="take-out" name="take-out" value="yes" id="take-out-yes" checked disabled>
+            <label class="take-out-txt" for="take-out-yes">是</label>
+            <input type="radio" class="take-out" name="take-out" value="no" id="take-out-no" disabled>
+            <label class="take-out-txt" for="take-out-no">否</label>
+        </div>
+    </li>
+    <li>
+        <label>配送范围</label>
+        <input type="text" class="info-txt" name="delivery-scope" readonly>
+    </li>
+    <li>
+        <label>配送时间</label>
+        <input type="text" class="info-txt" name="delivery-time" readonly>
+    </li>
+    <li>
+        <label>配送价格</label>
+        <input type="text" class="info-txt" name="delivery-money" readonly>
+    </li>
+    <li class="li-top">
+        <label>店铺说明</label>
+        <textarea class="shop-explain" readonly placeholder="请按照如下格式填写您的团购内容。商家介绍：例如营业面积、本店特色等；合作店数；套餐/产品；人均消费。"></textarea>
+    </li>
+</ul>
+</body>
+</html>

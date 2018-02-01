@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'universultracondensedbq-regular';
+    src: url('../font/universultracondensedbq-regular.otf');
+    src: url('../font/universultracondensedbq-regular.woff');
+    src: url('../font/universultracondensedbq-regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniversLT59UltraCondensed';
+    src: url('../font/Univers LT 59 Ultra Condensed.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 头部
+ */
+.header {position: fixed;top: 0;width: 100%;height: 3.75rem;background: #2477cf;z-index: 100;}
+.go_back {position: absolute;top: 50%;margin-top: -1rem;margin-left: 1rem;font-size: 2rem;color: #fff;}
+.title {height: 3.75rem;line-height: 3.75rem;font-family: "universultracondensedbq-regular","UniversLT59UltraCondensed";font-size: 1.5rem;letter-spacing: .15rem;color: #fffffd;text-align: center;text-shadow: 2px 2px 5px rgba(14,5,10,.6);}
+.top-margin {margin-top: 3.75rem;}
+.edit-btn {position: absolute;font-size: 1rem;color: #fff;top: 50%;margin-top: -.5rem;right: 1rem;}
+/* 首页
+*/
+.link_btn {display: block;}
+.shop-intro {padding: 1rem 0;background: #3598db;}
+.shop-head {margin-left: 1rem;vertical-align: middle;width: 6.5rem;}
+.shop-name {display: inline-block;margin-left: 1rem;font-size: 1.2rem;color: #fff;}
+.main-menu {margin-top: .75rem;}
+.main-menu li {padding: .58rem 0;background: #fff;}
+.main-menu li:first-child {border-bottom: 1px solid #e8ecee;}
+.main-menu li:last-child {margin-top: .75rem;}
+.index-icon {display: inline-block;margin-left: 1rem;width: 3.05rem;height: 3.05rem;text-align: center;line-height: 3.05rem;}
+.icon-menu {vertical-align: middle;width: 100%;}
+.icon-product {}
+.icon-shop {}
+.icon-set {width: 2rem;}
+.menu-item {display: inline-block;margin-left: .33rem;font-size: 1.2rem;color: #8da0b1;}
+.go_to {float: right;margin-right: 1rem;margin-top: .5rem;color: #8da0b1;font-size: 2rem;}
+/* 商品管理
+*/
+.sub-menu {font-size: 0;letter-spacing: -4px;}
+.sub-menu a {float: left;width: 50%;height: 3.3rem;line-height: 3.3rem;font-size: 1.2rem;letter-spacing: .06rem;text-align: center;color: #8da0b1;background: #fcfcfc;}
+.sub-menu a.sm-link {background: #8da0b1;color: #fcfcfc;}
+.product-box li {margin-top: .75rem;background: #f6f8f9;}
+.product-title {padding: .6rem 0;border-bottom: 1px solid #d2d2d2;}
+.pt-head {margin-left: 1rem;vertical-align: middle;width: 2.1rem;margin-right: 1rem;}
+.pt-name {display: inline-block;font-size: 1.2rem;color: #8da0b1;line-height: 2rem;}
+.product-state {float: right;line-height: 2rem;margin-right: 1rem;color: #b0bdc8;}
+.product-con {position: relative;padding: .5rem 0;}
+.pc-img {margin-left: 1rem;width: 7.6rem;vertical-align: middle;}
+.goods-name {margin-left: 1rem;font-size: 1rem;color: #8da0b1;}
+.goods-name b {margin-left: 2rem;}
+.product-btn {position: absolute;display: inline-block;padding: .5rem 1.2rem;font-size: 1rem;color: #8da0b1;border: 1px solid #8da0b1;border-radius: .2rem;-webkit-border-radius: .2rem;-moz-border-radius: .2rem;}
+.xj-btn {bottom: .5rem;right: 1rem;}
+.hf-btn {bottom: .5rem;right: 6rem;}
+/* 店铺信息
+*/
+.sub-title {height: 3.3rem;font-size: 1.2rem;letter-spacing: .06rem;color: #8da0b1;text-align: center;background: #dae5ed;line-height: 3.3rem;}
+.shop-info {}
+.shop-info li {padding: .8rem 1rem;background: #f6f8f9;border-top: 1px solid #e8ecee;}
+.shop-info li.li-top {margin-top: .8rem;border-top: none;}
+.shop-info li label {margin-right: 2rem;font-size: 1.2rem;letter-spacing: .06rem;color: #8da0b1;}
+.shop-info li label.middle-txt {line-height: 5.15rem;}
+.shop-info li label.right-icon:after {font-family: "FontAwesome";content: "\f105";font-size: 2rem;position: absolute;right: 1rem;margin-top: -.2rem;}
+.shop-info li .info-txt {width: 50%;height: 2rem;background: #f6f8f9;font-size: 1rem;letter-spacing: .05rem;color: #8da0b1;}
+.shop-info li .upload-img {width: 5.15rem;height: 5.15rem;vertical-align: middle;}
+.img-file {float: right;margin-left: .4rem;position: relative;padding: 0;width: 5.15rem;overflow: hidden;}
+.img-file input {position: absolute;right: 0;top: 0;bottom: 0;opacity: 0;}
+.shop-info li .location {float: right;font-size: 1.2rem;letter-spacing: .06rem;color: #8da0b1;}
+.shop-info li .location:before {font-family: "FontAwesome";content: "\f041";}
+.shop-info li .shop-explain {width: 50%;height: 11.5rem;background: #f6f8f9;font-size: 1rem;letter-spacing: .05rem;color: #8da0b1;vertical-align: top;resize: none;}
+.radio-box {float: right;}
+.info-btn {margin: 3.25rem 0;width: 100%;height: 2.75rem;font-size: 1.2rem;letter-spacing: .12rem;color: #fff;background: #3598db;}
+.shop-class-box {display: none;position: fixed;top: 50%;left: 50%;margin-left: -35%;width: 70%;background: #fff;z-index: 9999;}
+.shop-class-box li {padding: 1rem;border-bottom: 1px solid #e8ecee;font-size: 1.2rem;letter-spacing: .06rem;color: #8da0b1;}
+.shop-class-box li:last-child {border-bottom: none;}
+.location-img {width: 100%;}
+.set-txt {float: right;font-size: 1.2rem;letter-spacing: .06rem;color: #8da0b1;}

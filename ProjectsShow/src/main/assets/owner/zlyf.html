@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>货运宝--货主端</title>
+    <link href="jquery.mobile-1.2.0.css" rel="stylesheet" type="text/css"/>
+   
+    <style>
+        *{margin:0; padding:0; list-style:none;font-family:Microsoft YaHei ;}
+		body{background:#333333;}
+		.title{text-align:center; font-size:22px; color:#ebebeb;height:45px;line-height:45px;}
+		.left{background:url(images/back.png) no-repeat; width: 29px;height: 30px;display: block;float: left; margin-top:10px;background-size: 80%;}
+
+		form{margin-top:10px;}
+		.first{width:100%; height:52px; background:white; margin-top:10px;}
+		img{bbackground-size: 100%;padding: 6px 0 0 3px;  width: 80px;  float: left;}
+		.time{width: 67%; height: 47px;  border-style: none;  background: white;  text-align: center;  color: #999999;  }
+		.message{width:100%; height:108px; background:white; margin-top:10px;}
+		.message1{width:67%;height:55px;border-style:none; background:white; text-align:center; color:#999999;
+			margin-top:30px;resize: none;  font-size:13px;}
+		.btn2{background:#fda348;color:white;float:right;margin-top:25px;border-style:none;width:100px;height:37px;              border-radius:7px;cursor:pointer;text-decoration: none;text-align: center;line-height: 37px;}
+		td{font-size:14px;}
+    </style>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+    
+	<div data-role="header">
+    	<a href="wddd.html" class="left"></a>
+		<div class="title">填写订单</div>
+    </div> 
+    <div class="content">
+    	<form id="formid"  name= "myform" method = 'post'>
+        	<div class="first"><img src="images/time1.png"><input type="text" class="time" onblur="if (value ==''){value='什么时候发'}"onfocus="if(value=='什么时候发'){value=''}" value="什么时候发" /></div>
+            <div class="first second"><img src="images/start.png"><input type="text" class="time" onfocus="if(value=='从哪里出发'){value=''}" onblur="if (value ==''){value='从哪里出发'}" value="从哪里出发" /></div>
+            <div class="first"><img src="images/end.png"><input type="text" class="time" onfocus="if(value=='送到哪里去'){value=''}" onblur="if (value ==''){value='送到哪里去'}" value="送到哪里去" /></div>
+            <div class="first"><img src="images/host.png"><input type="text" class="time" onfocus="if(value=='货物类型：如钢材20吨'){value=''}" onblur="if (value ==''){value='货物类型：如钢材20吨'}" value="货物类型：如钢材20吨" /></div>
+            <div class="first"><img src="images/money.png"><input type="text" class="time" onfocus="if(value=='估价(元)订单总价'){value=''}" onblur="if (value ==''){value='估价(元)订单总价'}" value="估价(元)订单总价" /></div>
+            <div class="message"><img src="images/message.png"><textarea class="message1"   onfocus="if(value=='订单详情：可填所需车型、车长、其他备注信息'){value=''}" onblur="if (value ==''){value='订单详情：可填所需车型、车长、其他备注信息'}"> 订单详情：可填所需车型、车长、其他备注信息</textarea></div>  
+             <a class="btn2 baojia theme-login"  href="javascript:;">发送</a>
+             
+        </form> 
+       </div>
+    </div>
+         
+</div>
+
+</body>
+</html>
