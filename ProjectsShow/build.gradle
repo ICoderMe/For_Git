@@ -34,6 +34,26 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        beta {
+            debuggable = true;
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        qa {
+            debuggable = true;
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    productFlavors {
+        northAmerica {
+            applicationId 'xxx'
+        }
+        china {
+            applicationId 'yyy'
+        }
+
     }
 }
 
